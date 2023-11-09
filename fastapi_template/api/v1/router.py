@@ -1,6 +1,6 @@
 from fastapi.routing import APIRouter
 
-from ejercicio_curso_python.api.api_v1.endpoints import hello_world
+from fastapi_template.api.v1.endpoints import hello_world
 
 
 api_router = APIRouter()
