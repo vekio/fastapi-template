@@ -6,10 +6,10 @@ authors = ["Alberto Castañeiras <alberto@casta.me>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 fastapi = "^0.104.1"
 uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
-
+pydantic-settings = "^2.0.3"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.11.0"

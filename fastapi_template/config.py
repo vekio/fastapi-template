@@ -1,4 +1,5 @@
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
+
 
 class Settings(BaseSettings):
     project: str
@@ -9,9 +10,8 @@ class Settings(BaseSettings):
     # web_host: str
     # web_port: int
 
-    class Config:
-        env_file = ".env"
-        env_file_encoding = "utf-8"
+    # model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
 
 settings = Settings()
+print(settings)
