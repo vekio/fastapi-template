@@ -23,4 +23,4 @@ COPY --from=builder ${VIRTUAL_ENV} ${VIRTUAL_ENV}
 
 COPY fastapi_template ./fastapi_template
 
-CMD ["uvicorn", "fastapi_template.api.app:init_app", "--reload", "--host", "0.0.0.0", "--port", "80"]
+# CMD ["uvicorn", "fastapi_template.api.app:init_app", "--reload", "--host", "0.0.0.0", "--port", "80"]
